@@ -20,7 +20,7 @@ display(df)
 
 # COMMAND ----------
 
-df1 = df.withColumn("dt",to_timestamp('value',"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"))
+df1 = df.withColumn("dt",to_timestamp('value',"yyyy-MM-ddHH:mm:ss.SSS"))
 display(df1)
 
 # COMMAND ----------
